@@ -1,0 +1,25 @@
+{
+  "name": "expresssetup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start-watch": "nodemon --exec babel-node index.js",
+    "wp-server": "webpack-dev-server",
+    "start": "concurrently \"npm:start-watch\" \"npm:wp-server\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "webpack-dev-server": "^3.10.0"
+  }
+}
